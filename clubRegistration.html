@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Chris Jiang">
+    <meta name="date" content="1/30/2018">
+    <meta name="Keywords" content="vt, club, BIT">
+    <meta name="description" content="This is where new BIT members may register">
+    <link rel="stylesheet" href="styles.css">   <!--This links a CSS style sheet-->
+</head>
+<body>
+    <h1>BIT Club Registration <Form></Form></h1>
+    <form method="GET" action="/action_page.php" autocomplete="off" >
+        PID<input type="text" name="PID" required autofocus> <br>
+        <!--Password type input doesn't let you see what you type-->
+        Password<input type="password" name="password" required> <br>
+        <!-- Email input type auto-validates that it's an email -->
+        Email<input type="email" name="Email" placeholder="..@vt.edu" required>   <br>
+        <!--Checkboxes let you check mult-->
+        Major: <br>
+        BIT<input type="checkbox" name="BIT">   
+        ACIS<input type="checkbox"name="ACIS">   
+        CS<input type="checkbox" name="CS">   
+        Other<input type="checkbox" name="Other">   <br>
+        Birthdate<input type="date" name="Bdate">   <br>
+        <!--Sliding Bar-->
+        How much do you LOVE BIT?  <br>
+        Not at all <input type="range" name="BIT LOVE" max="100" min="0"> A lot  <br>
+        <!--number only, set bounds-->
+        Credit Hours<input type="number" name="credit hours" max="30" min="0" value="15">   <br>
+        <!--Tel only supported by safari-->
+        Phone Number<input type="tel" name="Phone" placeholder="(###)-###-####">   <br>
+        <!--Drop down menu, doesn't use input, uses select-->
+        Best College<select name="Best College">  
+            <option value="Virginia Tech" selected>Virginia Tech</option>
+            <option value="George Mason">George Mason</option>
+            <option value="UVA">UVA</option>
+            <option value="ODU">ODU</option>
+            <option value="Georgetown">Georgetown</option>
+        </select> <br>
+        <input type="submit" value="Submit Form">   <br>
+    </form>
+</body>
+
+<br>
+<a href="HW1.html">Back to Home Page</a>

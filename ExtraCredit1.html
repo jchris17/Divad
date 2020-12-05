@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us (extra credit)</title>
+    <meta charset="UTF-8"/> <!--This tells the page what letters to use-->
+    <meta name="Author" content="Chris Jiang"/>     <!--This gives page info used for search-->
+    <meta name="Keywords" content="vt, club, BIT">
+    <meta name = "description" content="This is a way to contact club officials">
+</head>
+<body>
+    <h1>Contact us</h1>
+    <form action="Get"></form>
+    <!-- Lable with for attribute below -->
+    <label for="Personal ID">PID:</label> <input type="text" name="pid" placeholder="Enter PID"> <br>
+    Why are you contacting us? <br>
+    <!-- I also put labels with for attributes here for the radio buttons -->
+    <input type="radio" id = "r1" name="why" value="help"> 
+    <label for="r1">I need BIT help</label>
+    <input type="radio" id = "r2" name="why" value="volunteer">
+    <label for="r2">I want to volunteer</label>
+    <input type="radio" id = "r3"name="why" value="Other"> 
+    <label for="r3">Other</label>
+    <br>
+    <textarea name="otherText" id="" cols="50" rows="5" 
+    placeholder="Type here if you selected Other"></textarea> <br>
+    <input list="list" placeholder="How do you like our form">
+    <datalist id="list">
+        <option value="LOVE IT"></option>
+        <option value="It's pretty good"></option>
+        <option value="Alright"></option>
+        <option value="Not the best"></option>
+        <option value="Needs improvement"></option>
+    </datalist>
+    <br>
+    <input type="submit" value="Submit"> 
+    <input type="reset" value="Clear">  <br>
+</body>

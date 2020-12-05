@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hokie Fly</title>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Chris Jiang" />
+    <meta name="Keywords" content="vt, club, BIT">
+    <meta name="Description" content="This the flight of the Hokie Bird" />
+    <!-- The Hokie bird flies towards the screen, doing a triple backflip, translating downwards, and growing in size -->
+    <style>
+        img {
+            position: relative;
+            animation: boid linear 10s 1s infinite;
+            -webkit-animation: boid linear 2s 0s infinite;
+            /* Name, Movement type, duration, delay, number of times */
+        }
+
+        @keyframes boid {
+            0%   {left: 0px; top: 0px;}
+            100% {left: 500px; top: 500px; transform: rotateZ(-900deg) scale(3); }
+        }
+
+        @-webkit-keyframes boid {
+            0%   {left: 0px; top: 0px;}
+            100% {left: 500px; top: 500px; transform: rotateZ(-900deg) scale(3); }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="boid.jpeg" alt="boid" height="100" width="100">
+</body>
+
+</html>

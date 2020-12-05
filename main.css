@@ -1,0 +1,86 @@
+p {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-style: unset;
+    margin-top: 2px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: blue;
+    padding-left: 2em;
+    background-color: cornsilk;
+    box-shadow: 5px 5px cornflowerblue;
+}
+
+li {
+    text-decoration-line: unset;
+    color: mediumorchid;
+    text-align: left;
+    text-indent: 20px;
+}
+
+footer {
+    text-decoration-line: overline;
+    color: crimson;
+    text-align: center;
+    text-indent: 20px;
+}
+
+/* This is for the top of nav bar */
+nav {       
+    font-weight: bold;
+    /* text color */
+    color: cornsilk;
+    background-color: cornflowerblue;
+    border-width: 2px;
+    border-color: cornflowerblue;
+    width: 15em;
+    text-align: center;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    background-color: cornsilk;
+    color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: cornflowerblue;
+    /* border: 1px solid cornflowerblue; */
+}
+
+nav ul li:hover {
+    background-color: darkcyan;
+    font-style: italic;
+}
+
+/* This is animation */
+img.boid{
+    position: relative;
+    animation: boid linear 10s 1s infinite;
+    -webkit-animation: boid linear 10s 0s infinite;
+    /* Name, Movement type, duration, delay, number of times */
+}
+@keyframes boid {
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 0px; top: 100px;}
+    50%  {left: 100px; top: 100px;}
+    75% {left: 100px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+@-webkit-keyframes boid{
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 0px; top: 100px;}
+    50%  {left: 100px; top: 100px;}
+    75% {left: 100px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
